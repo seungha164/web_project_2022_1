@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'SuseongDotum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/SuseongDotum.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EarlyFontDiary';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{font-family: 'EarlyFontDiary';}
+#wrapper{margin:0;padding: 0;}
+.menu{float: left;width: 20%;height: 100%;}
+.container{float: right;width: 80%;background: #f5e9e9;overflow: hidden;height: 100%;}
+div.container>.page{background: white;margin: 5 auto;width: 90%;border-radius: 10px;padding: 10px;}
+
+.page>.title{margin:0px;font-size: 1.5em; font-family:'SuseongDotum';}
+.page>.subtitle{margin: 10px 0px;}
+
+.menu>.title{margin-top: 80px;font-weight: bold;font-size: larger;text-align: center;}
+.menu>ul{padding:15px;list-style: none;}
+.menu>ul>li{list-style-type: none;padding-top: 24px;padding-bottom: 24px;border-bottom: 1px solid #c7c7c7;}
+
+.page>fieldset{width: fit-content;border-radius:10px;border:1px solid #c7c7c7}
+.page>fieldset>p{font-size: 0.9em;margin: 0;}
+
+

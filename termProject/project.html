@@ -1,0 +1,67 @@
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <script type="text/javascript" src="fullPage.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+	        //options here
+	        autoScrolling:true,
+	        scrollHorizontally: true
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="menu">
+            <p class="title">CLASS</p>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#list">1. LIST</a></li>
+                <li><a href="#review">2. 한줄 평</a></li> 
+                <li><a href="#pick">3. pick</a></li>
+            </ul>
+        </div>
+        <div id="fullpage">
+            <div class="section"  id="home">
+                <p class="title"><img src="" alt="">수업 끝나고 뭐 먹지??</p>
+                <p class="subtitle">수업과 과제에 지친 경기대생들을 위한 맛집 리스트</p>
+                <fieldset>
+                    <legend>maker</legend>
+                    <p>202014914 노승하</p> 
+                    <p>github : https://github.com/seungha164</p> 
+                    <p>velog : https://velog.io/@c43t4rd</p> 
+                </fieldset>
+            </div>
+            <div class="section"  id="review">
+                <p class="title"><img src="" alt="">맛집 리스트</p>
+                <p class="subtitle">후문에 어느 맛집이 있는지 살펴보세요~!!</p>
+            </div>
+            <div class="section" id="list">
+            <p class="title"><img src="" alt="">한줄평</p>
+                <p class="subtitle">후문에 어느 맛집이 있는지 살펴보세요~!!</p>
+                <div></div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus alias? Enim voluptatum cupiditate rem ad amet veritatis, atque quod unde, non fugit, delectus dolorum quibusdam ratione nobis ipsa itaque?
+            </div>
+            <div class="section"  id="pick">
+                <p class="title"><img src="" alt="">오늘의 Pick</p>
+                <p class="subtitle">어디를 가야할 까? 싶다면 버튼을 눌러주세요~</p>
+                category
+                <div id="category_space">
+                    <button class="categoryBtn">카페</button><button class="categoryBtn">밥집</button><button class="categoryBtn">술집</button>
+                    <button class="categoryBtn">매운게 땡길때</button><button class="categoryBtn">비오는 날에는</button><button class="categoryBtn">간단한 한끼</button>
+                </div>
+                <div class="space4">
+                    <button id="pickBtn">click</button>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
