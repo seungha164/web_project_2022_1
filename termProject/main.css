@@ -1,29 +1,634 @@
 @font-face {
     font-family: 'SuseongDotum';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/SuseongDotum.woff2') format('woff2');
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'HancomUljuBangudae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'EarlyFontDiary';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
-*{font-family: 'EarlyFontDiary';}
-#wrapper{margin:0;padding: 0;}
-.menu{float: left;width: 20%;height: 100%;}
-.container{float: right;width: 80%;background: #f5e9e9;overflow: hidden;height: 100%;}
-div.container>.page{background: white;margin: 5 auto;width: 90%;border-radius: 10px;padding: 10px;}
 
-.page>.title{margin:0px;font-size: 1.5em; font-family:'SuseongDotum';}
-.page>.subtitle{margin: 10px 0px;}
+* {
 
-.menu>.title{margin-top: 80px;font-weight: bold;font-size: larger;text-align: center;}
-.menu>ul{padding:15px;list-style: none;}
-.menu>ul>li{list-style-type: none;padding-top: 24px;padding-bottom: 24px;border-bottom: 1px solid #c7c7c7;}
+    font-family: 'EarlyFontDiary';
+}
 
-.page>fieldset{width: fit-content;border-radius:10px;border:1px solid #c7c7c7}
-.page>fieldset>p{font-size: 0.9em;margin: 0;}
+#wrapper {
+    margin: 0;
+    padding: 0;
+}
 
+.title {
+    color: #632e73;
+    margin: 0px;
+    font-size: 2em;
+    font-family: 'SuseongDotum';
+}
 
+.section {
+    padding: 20px;
+}
+
+/* menu */
+.menu>.title {
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+}
+
+.menu>ul {
+    padding: 15px;
+    list-style: none;
+}
+
+.menu>ul>li svg {
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.menu>ul>li {
+    font-size: 1.3em;
+    width: 100%;
+    list-style-type: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #9a82a1;
+}
+
+a {
+    font-family: 'SuseongDotum';
+    text-decoration: none;
+}
+
+.menu>p:last-child {
+    font-weight: bold;
+    color: #9a82a1;
+    bottom: 0;
+    left: 15;
+    position: absolute;
+}
+
+/* home 1 */
+.subtitle {
+    margin: 10px 0px 30px 0px;
+}
+
+/* list */
+#list .list_content1 {
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+}
+
+#list .list_content2 {
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    background: #c7c7c7;
+}
+
+#list ul {
+    margin: 0;
+    padding: 3px 1px;
+    float: right;
+    width: 26%;
+    height: 100%;
+    background: #c7c7c7;
+}
+
+.search {
+    position: relative;
+    width: 300px;
+}
+
+.search>img {
+    position: absolute;
+    width: 17px;
+    top: 10px;
+    right: 12px;
+    margin: 0;
+}
+
+#review1 #id {
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    width: auto;
+}
+
+#reviewInput {
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    height: 50px;
+}
+
+.swiper-slide div {
+    position: absolute;
+    top: 50%;
+    margin: -50px 0 0 0px;
+    width: 100%;
+}
+
+/* item_list */
+.item_list::-webkit-scrollbar {
+    width: 10px;
+    /* 스크롤바의 너비 */
+}
+
+.item_list::-webkit-scrollbar-thumb {
+    height: 30%;
+    /* 스크롤바의 길이 */
+    background: #a96ba5;
+    /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+.item_list::-webkit-scrollbar-track {
+    /*스크롤바 뒷 배경 색상*/
+    background: #ad96b5;
+}
+
+#review1 .item_list {
+    height: 540px;
+}
+
+.item_list>.item {
+    border-radius: 10px;
+    position: relative;
+    list-style-type: none;
+    background: rgb(254, 255, 255);
+    overflow: hidden;
+    height: fit-content;
+    padding: 10px;
+    margin: 5px 0px 2px 0px;
+    cursor: pointer;
+}
+
+.item_list>.item>img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.item_list>.item .text {
+    float: right;
+    width: 200;
+}
+
+.item_list>.item .item_title {
+    font-size: 1.1em;
+    margin: 5px 0px;
+    font-family: 'SuseongDotum';
+}
+
+#list1 .list_content2 {
+    border: 1px solid grey;
+    margin-top: 20px;
+    width: 1030px;
+    height: 250px;
+}
+
+@media screen and (min-width:1301px) {
+    .menu {
+        float: left;
+        width: 300px;
+        height: 100%;
+        background: #f4e1fa;
+    }
+
+    .container {
+        margin-left: 300px;
+        width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    /*home*/
+    #home1 .title {
+        font-size: 3em;
+    }
+
+    fieldset {
+        background: #f4ecf6;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 500px;
+        border-radius: 10px;
+        border: 2px solid #eddbf2
+    }
+
+    #home1 a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #home1 fieldset>img {
+        float: left;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    #home1 fieldset>legend {
+        color: #632e73;
+        font-size: 1.3em;
+        font-family: 'SuseongDotum';
+    }
+
+    #home1 fieldset>div {
+        float: right;
+        width: 330px;
+    }
+
+    #home1 fieldset>div {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+
+    /* 2. map */
+    .map_space {
+        overflow: hidden;
+        width: 100%;
+        height: 500px;
+    }
+
+    #map {
+        float: left;
+        margin-right: 20px;
+        width: 600px;
+        height: 100%;
+        background: #e9d3d3;
+        border-radius: 10px;
+    }
+
+    .item_list {
+        border-radius: 10px;
+        padding: 5px;
+        overflow-y: scroll;
+        float: right;
+        margin: 0;
+        width: 310px;
+        height: 500px;
+        background: #ad96b5;
+    }
+
+    #review1 .left {
+        overflow: hidden;
+        position: relative;
+        float: left;
+        margin-right: 20px;
+        width: 600px;
+        height: 600px;
+    }
+
+    #review1 .right {
+        float: right;
+        width: 310;
+        height: 500px;
+    }
+
+    .mySwiper {
+        position: relative;
+        overflow: hidden;
+        border: 2px solid #c7c7c7;
+        border-radius: 10px;
+        width: 550px;
+        height: 200px;
+        padding: 20px;
+    }
+
+    .swiper-slide {
+
+        box-shadow: 2px 2px 2px 2px #c7c7c7;
+        border-radius: 15px;
+    }
+
+    .swiper-slide>p:first-child {
+        text-align: center;
+    }
+
+    .swiper-slide p:nth-child(1) {
+        text-align: center;
+        color: #632e73;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    .swiper-slide p:nth-child(2) {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    /*  3. review  */
+    #review1 .selectbox {
+        margin: 0;
+        margin-top: 80px;
+        border-radius: 10px;
+        border: 1px solid #b496bd;
+        width: 550px;
+        padding: 20px;
+    }
+
+    #review1 .selectbox>#review_name {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'SuseongDotum';
+    }
+
+    #review1 .selectbox>#review_btn {
+        margin-top: 20px;
+        width: 100%;
+        background: #b496bd;
+        border-radius: 20px;
+        border: 0;
+        height: 40px;
+        box-shadow: 2px 2px 2px 2px #f4e1fa;
+        color: aliceblue;
+    }
+}
+
+@media screen and (max-width:1300px) and (min-width:1001px) {
+    .menu {
+        display: none;
+    }
+
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    fieldset {
+        background: #f4ecf6;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 500px;
+        border-radius: 10px;
+        border: 2px solid #eddbf2
+    }
+
+    #home1 a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #home1 fieldset>img {
+        float: left;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    #home1 fieldset>legend {
+        color: #632e73;
+        font-size: 1.3em;
+        font-family: 'SuseongDotum';
+    }
+
+    #home1 fieldset>div {
+        float: right;
+        width: 330px;
+    }
+
+    #home1 fieldset>div {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+
+    /* 2. map */
+    .map_space {
+        overflow: hidden;
+        width: 100%;
+        height: 500px;
+    }
+
+    #map {
+        float: left;
+        margin-right: 20px;
+        width: 600px;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .item_list {
+        border-radius: 10px;
+        padding: 5px;
+        overflow-y: scroll;
+        float: right;
+        margin: 0;
+        width: 310px;
+        height: 500px;
+        background: #ad96b5;
+    }
+
+    #review1 .left {
+        overflow: hidden;
+        position: relative;
+        float: left;
+        margin-right: 20px;
+        width: 600px;
+        height: 600px;
+    }
+
+    #review1 .right {
+        float: right;
+        width: 310;
+        height: 500px;
+    }
+
+    .mySwiper {
+        position: relative;
+        overflow: hidden;
+        border: 2px solid #c7c7c7;
+        border-radius: 10px;
+        width: 550px;
+        height: 200px;
+        padding: 20px;
+    }
+
+    .swiper-slide {
+
+        box-shadow: 2px 2px 2px 2px #c7c7c7;
+        border-radius: 15px;
+    }
+
+    .swiper-slide>p:first-child {
+        text-align: center;
+    }
+
+    .swiper-slide p:nth-child(1) {
+        text-align: center;
+        color: #632e73;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    .swiper-slide p:nth-child(2) {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    /*  3. review  */
+    #review1 .selectbox {
+        margin: 0;
+        margin-top: 80px;
+        border-radius: 10px;
+        border: 1px solid #b496bd;
+        width: 550px;
+        padding: 20px;
+    }
+
+    #review1 .selectbox>#review_name {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'SuseongDotum';
+    }
+
+    #review1 .selectbox>#review_btn {
+        margin-top: 20px;
+        width: 100%;
+        background: #b496bd;
+        border-radius: 20px;
+        border: 0;
+        height: 40px;
+        box-shadow: 2px 2px 2px 2px #f4e1fa;
+        color: aliceblue;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .menu {
+        display: none;
+    }
+
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    /* home */
+    #home1 fieldset {
+        background: #f4ecf6;
+        position: relative;
+        width: 100px;
+        border-radius: 10px;
+        border: 2px solid #eddbf2
+    }
+
+    #home1 fieldset>img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 70px;
+    }
+
+    /* 2. map */
+    #map {
+        margin-bottom: 20px;
+        width: 450px;
+        height: 400px;
+        border-radius: 10px;
+    }
+
+    .item_list {
+        border-radius: 10px;
+        padding: 5px;
+        overflow-y: scroll;
+        margin: 0;
+        width: 300px;
+        height: 300px;
+        background: #ad96b5;
+    }
+
+    .mySwiper {
+        position: relative;
+        overflow: hidden;
+        border: 2px solid #c7c7c7;
+        border-radius: 10px;
+        width: 420px;
+        height: 150px;
+        padding: 20px;
+    }
+
+    .swiper-slide {
+        box-shadow: 2px 2px 2px 2px #c7c7c7;
+        border-radius: 15px;
+    }
+
+    .swiper-slide>p:first-child {
+        text-align: center;
+    }
+
+    .swiper-slide p:nth-child(1) {
+        text-align: center;
+        color: #632e73;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    .swiper-slide p:nth-child(2) {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    /*  3. review  */
+    #review1 .selectbox {
+        margin: 0;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px solid #b496bd;
+        width: 420px;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    #review1 .selectbox>#review_name {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'SuseongDotum';
+    }
+
+    #review1 .selectbox>#review_btn {
+        margin-top: 20px;
+        width: 100%;
+        background: #b496bd;
+        border-radius: 20px;
+        border: 0;
+        height: 40px;
+        box-shadow: 2px 2px 2px 2px #f4e1fa;
+        color: aliceblue;
+    }
+
+    #review1 .item_list {
+        border-radius: 10px;
+        padding: 5px;
+        overflow-y: scroll;
+        margin: 0;
+        width: 300px;
+        height: 200px;
+        background: #ad96b5;
+    }
+}
