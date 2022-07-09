@@ -14,6 +14,7 @@ clone한 프로젝트의 디렉토리에서 명령어 입력<br>
 1. HOME
 2. MAP & LIST
   : 설정한 맛집들을 리스트와 지도상의 마커로 표시
+  ![image](https://user-images.githubusercontent.com/87134443/178114049-2324e6e5-dc76-4cae-854e-1a041b2ea8bb.png)
 3. 한줄평
   : 맛집들에 대한 한줄평을 보여주고, 직접 한줄평을 달 수 있음
 _____
