@@ -17,4 +17,4 @@ clone한 프로젝트의 디렉토리에서 명령어 입력<br>
   ![image](https://user-images.githubusercontent.com/87134443/178114049-2324e6e5-dc76-4cae-854e-1a041b2ea8bb.png)
 3. 한줄평
   : 맛집들에 대한 한줄평을 보여주고, 직접 한줄평을 달 수 있음
-_____
+  ![image](https://user-images.githubusercontent.com/87134443/178114113-f802d05c-c219-4866-8ea5-788f8ec3e021.png)
